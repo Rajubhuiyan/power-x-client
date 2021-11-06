@@ -1,0 +1,11 @@
+.day-container{
+    box-shadow: 1px 1px 10px rgba(173, 216, 230, 0.537);
+}
+.join-btn-style{
+    height: 200px
+}
+@media only screen and (max-width: 600px) {
+    .join-btn-style{
+        height: 50px
+    }
+}

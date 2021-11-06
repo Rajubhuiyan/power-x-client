@@ -1,0 +1,39 @@
+.psycho-container{
+    background-image: url('../../../images/psycho-bg.png');
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+}
+.selfdefence-container{
+    background-image: url('../../../images/selfdefence-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+}
+.advancedgym-container{
+    background-image: url('../../../images/advancedgym-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+}
+.cardiotraining-container{
+    background-image: url('../../../images/cardiotraining-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+}
+.strengthtraining-container{
+    background-image: url('../../../images/strengthtraining-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+}
+.psychotraining-container{
+    background-image: url('../../../images/psychotraining-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+}
+.training-btn-position{
+    margin-bottom: -20px !important;
+}

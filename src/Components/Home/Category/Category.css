@@ -1,0 +1,61 @@
+.Progression-category{
+    border: none !important;
+    background-image: url('../../../images/progression-bg.jpg');
+    background-size: cover;
+    color: white;
+    height: 300px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.633);
+    background-blend-mode: color;
+}
+
+
+.Progression-category h2{
+    font-weight: bold;
+}
+.Progression-category img{
+    width: 50px;
+}
+.WorkOut-category{
+    background-image: url('../../../images/workout-bg.jpg');
+    color: white !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.633);
+    background-blend-mode: color;
+    border: none !important;
+    height: 300px;
+    width: 400px;
+}
+.WorkOut-category h2{
+    color: yellow;
+    font-weight: bold;
+}
+.WorkOut-category img{
+    width: 80px;
+    margin-bottom: 20px;
+}
+.Nutrition-category{
+    background-image: url('../../../images/nutrition-bg.jpg');
+    color: white !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.633);
+    background-blend-mode: color;
+    border: none !important;
+    height: 300px;
+    width: 400px;
+}
+.Nutrition-category h2{
+    font-weight: bold;
+}
+.Nutrition-category img{
+    width: 50px;
+}
+.category-container{
+    height: 100%;
+}
+.card{
+    padding: 35px;
+}

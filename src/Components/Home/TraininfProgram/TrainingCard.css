@@ -1,0 +1,26 @@
+.training-card{
+    height:450px;
+    width: 100%;
+}
+.yoga-container{
+    background-image: url('../../../images/yoga-bg.png');
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    background-color: rgba(79, 22, 177, 0.523);
+    background-blend-mode: color;
+}
+.cardiyo-container{
+    background-image: url('../../../images/cardio-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    background-color: rgba(79, 22, 177, 0.523);
+    background-blend-mode: color;
+}
+
+.training-button{
+    background-color: #FCD842;
+    width: 330px;
+    height: 65px;
+}

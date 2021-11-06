@@ -1,0 +1,9 @@
+.about-us-container{
+    height: 400px;
+    width: 100%;
+    box-shadow: 5px 5px 10px lightgrey;
+
+}
+.about-us-container:hover{
+    box-shadow: 5px 5px 13px lightgrey;
+}
