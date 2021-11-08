@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyB48aE99Lk6Sj8rnWQnlThQJmnQecMF3W8",
-    authDomain: "powerx-site.firebaseapp.com",
-    projectId: "powerx-site",
-    storageBucket: "powerx-site.appspot.com",
-    messagingSenderId: "64989094929",
-    appId: "1:64989094929:web:abac05d2436ee202a07db0"
-  };
+  apiKey: "AIzaSyC0vBDRHLW3kXeK7668PhXEcQwmiOZPx-o",
+  authDomain: "power-x-s.firebaseapp.com",
+  projectId: "power-x-s",
+  storageBucket: "power-x-s.appspot.com",
+  messagingSenderId: "761926232630",
+  appId: "1:761926232630:web:818a294fb0da1e0b538697"
+};
 
   export default firebaseConfig;
