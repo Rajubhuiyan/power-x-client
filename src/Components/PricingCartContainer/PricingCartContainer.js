@@ -25,7 +25,7 @@ const PricingCartContainer = () => {
             </div>
             <div className="row">
                 {
-                    pricingData.map(pricingInfo => <PricingCart pricingInfo={pricingInfo}></PricingCart>)
+                    pricingData.map(pricingInfo => <PricingCart key={pricingInfo.price} pricingInfo={pricingInfo}></PricingCart>)
                 }
             </div>
         </section>

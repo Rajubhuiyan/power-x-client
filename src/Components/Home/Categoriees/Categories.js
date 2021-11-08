@@ -27,7 +27,7 @@ const Categories = () => {
         <div className="d-flex justify-content-center mt-5 mb-5">
             <div className="row container">
                 {
-                    categoryList.map(cg => <Category cg={cg}></Category>)
+                    categoryList.map(cg => <Category key={cg.id} cg={cg}></Category>)
                 }
             </div>
         </div>

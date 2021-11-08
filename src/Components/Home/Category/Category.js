@@ -1,7 +1,6 @@
 import React from 'react';
 import './Category.css'
 const Category = ({ cg }) => {
-    console.log(cg);
 
     return (
         <div className="col-md-4 col-sm-12 mb-3">

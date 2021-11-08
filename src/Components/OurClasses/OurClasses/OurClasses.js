@@ -1,48 +1,42 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Loading from '../../Loading/Loading';
 import OurClass from '../OurClass/OurClass';
 
-const classesData = [
-    {
-        id: 1,
-        title: 'PSYCHO TRAINING',
-        category: 'psycho'
-    },
-    {
-        id: 2,
-        title: 'SELF DEFENCE',
-        category: 'selfdefence'
-    },
-    {
-        id: 3,
-        title: 'ADVANCED GYM',
-        category: 'advancedgym'
-    },
-    {
-        id: 4,
-        title: 'CARDIO TRAINING',
-        category: 'cardiotraining'
-    },
-    {
-        id: 5,
-        title: 'STRENGTH TRAINING',
-        category: 'strengthtraining'
-    },
-    {
-        id: 6,
-        title: 'PSYCHO TRAINING',
-        category: 'psychotraining'
-    },
-
-]
 
 const OurClasses = () => {
+
+    const [category, setCategory] = useState([]);
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        fetch('https://desolate-refuge-31530.herokuapp.com/getCategoryItem')
+            .then(res => res.json())
+            .then(data => {
+                setCategory(data);
+                setIsLoading(false)
+            })
+    }, [])
+
+    // insert data
+    // {fetch('http://localhost:5000/addCategory', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify(classesData)
+    // })
+    //     .then(res => res.json())
+    //     .then(data => console.log(data))
+
+    //     console.log(classesData);}
+
     return (
         <section className="container mt-5">
-            <div className="row">
-                {
-                    classesData.map(cd => <OurClass cd={cd}></OurClass>)
-                }
-            </div>
+            {isLoading ? <Loading></Loading> :
+                <div className="row">
+                    {
+                        category.map(cd => <OurClass key={cd.id} cd={cd}></OurClass>)
+                    }
+                </div>
+            }
         </section>
     );
 };

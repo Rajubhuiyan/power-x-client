@@ -30,7 +30,7 @@ const WhyChooseUsContainer = () => {
             </div>
             <div className="row mb-5 mt-5">
                 {
-                    aboutUsData.map((data) => <WhyChooseUs data={data}></WhyChooseUs>)
+                    aboutUsData.map((data) => <WhyChooseUs key={data.cat} data={data}></WhyChooseUs>)
                 }
             </div>
         </section>

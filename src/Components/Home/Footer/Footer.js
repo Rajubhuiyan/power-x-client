@@ -46,7 +46,7 @@ const Footer = () => {
                     </div>
                     <div className="col-md-2">
                         <p style={{ fontWeight: 'bold' }} className="text-white">Join Our Newsletter</p>
-                        <p className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, hic.</p>
+                        <small className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, hic.</small>
                     </div>
                 </div>
             </div>

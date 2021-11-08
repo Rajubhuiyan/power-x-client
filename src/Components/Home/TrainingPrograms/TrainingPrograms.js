@@ -22,7 +22,7 @@ const TrainingPrograms = () => {
             </div>
             <div className="row mt-5">
                 {
-                    programData.map(pg => <TrainingProgram program={pg}></TrainingProgram>)
+                    programData.map(pg => <TrainingProgram key={pg.id} program={pg}></TrainingProgram>)
                 }
             </div>
         </section>

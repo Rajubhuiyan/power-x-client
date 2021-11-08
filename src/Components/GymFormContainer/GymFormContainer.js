@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import BankPayment from '../BankPayment/BankPayment';
 import GymMembershipForm from '../GymMembershipForm/GymMembershipForm';
 import Footer from '../Home/Footer/Footer';
+import OrderSuccessPage from '../OrderSuccessPage/OrderSuccessPage';
 import OthersHeader from '../OurClasses/OthersHeader/OthersHeader';
 
 const GymFormContainer = () => {
@@ -10,11 +11,13 @@ const GymFormContainer = () => {
     };
 
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-
+    const [isOrderSuccess, setIsOrderSuccess] = useState(false);
     return (
         <div>
             <OthersHeader category={category.name}></OthersHeader>
-            {isFormSubmitted ? <BankPayment></BankPayment> : <GymMembershipForm setFormSubmitted={setIsFormSubmitted}></GymMembershipForm>}
+            {isOrderSuccess ? <OrderSuccessPage></OrderSuccessPage> : isFormSubmitted ? <BankPayment setIsOrderSuccess={setIsOrderSuccess}></BankPayment> : <GymMembershipForm setFormSubmitted={setIsFormSubmitted}></GymMembershipForm>
+            
+        }
             <Footer></Footer>
         </div>
     );

@@ -1,6 +1,7 @@
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const HeaderMain = () => {
     const [video, setVideo] = useState(false)
@@ -10,7 +11,7 @@ const HeaderMain = () => {
                 <div className="col-md-6">
                     <h1 className="text-white" style={{fontWeight: 'bold', fontSize: '50px'}}>The Best Fitness <br /> Studio In Town</h1>
                     <small className="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit quo ipsum omnis. Quos officiis tempora, quasi voluptas, maiores ratione inventore quis cupiditate dolor nisi, ipsum ducimus nesciunt voluptatibus sapiente ullam!</small> <br />
-                    <button className="btn btn-warning mt-4 pe-4 ps-4 pt-2 pb-2">Join Us</button>
+                    <Link to="/ourClasses"><button className="btn btn-warning mt-4 pe-4 ps-4 pt-2 pb-2">Join Us</button></Link>
                 </div>
                 <div className="col-md-6 d-flex justify-content-md-center justify-content-sm-start">
                     <div>

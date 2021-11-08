@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm } from "react-hook-form";
+import { userContext } from '../../App';
 
 const GymMembershipForm = ({setFormSubmitted}) => {
 
+    const [loggedInUser, setLoggedInUser,orderAndPayment, setOrderAndPayment] = useContext(userContext);
+    
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = (data) => {
-        console.log(data);
         if (data) {
-            setFormSubmitted(true)
+            setFormSubmitted(true);
+            const shippingData = {...data};
+            setOrderAndPayment({shippingInfo: shippingData})
         }
     };
 
@@ -25,7 +29,7 @@ const GymMembershipForm = ({setFormSubmitted}) => {
                     </div>
                     <div className="col-md-6 mt-4">
                         <label htmlFor="">Email</label>
-                        <input className="form-control"{...register("email", { required: true })} />
+                        <input defaultValue={loggedInUser.email} className="form-control"{...register("email", { required: true })} />
                         {errors.exampleRequired && <span>This field is required</span>}
                     </div>
                     <div className="col-md-6 mt-4">

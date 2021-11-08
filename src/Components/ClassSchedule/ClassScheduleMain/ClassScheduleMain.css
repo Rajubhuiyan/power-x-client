@@ -4,8 +4,82 @@
 .join-btn-style{
     height: 200px
 }
+
+
+.psychotraining-container{
+    height: 600px;
+    width: 60%;
+    background-image: url('../../../images/psychotraining-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.strengthtraining-container{
+    height: 600px;
+    width: 60%;
+    background-image: url('../../../images/strengthtraining-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardiotraining-container{
+    height: 600px;
+    width: 60%;
+    background-image: url('../../../images/cardio-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.advancedgym-container{
+    height: 600px;
+    width: 60%;
+    background-image: url('../../../images/advancedgym-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.selfdefence-container{
+    height: 600px;
+    width: 60%;
+    background-image: url('../../../images/selfdefence-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.psycho-container{
+    height: 600px;
+    width: 60%;
+    background-image: url('../../../images/psycho-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media only screen and (max-width: 600px) {
     .join-btn-style{
         height: 50px
+    }
+    .strengthtraining-container{
+        width: 100%;
+        height: 500px;
+    }
+    .psycho-container{
+        width: 100%;
+        height: 500px;
+    }
+    .selfdefence-container{
+        width: 100%;
+        height: 500px;
+    }
+    .advancedgym-container{
+        width: 100%;
+        height: 500px;
+    }
+    .cardiotraining-container{
+        width: 100%;
+        height: 500px;
+    }
+    .strengthtraining-container{
+        width: 100%;
+        height: 500px;
+    }
+    .psychotraining-container{
+        width: 100%;
+        height: 500px;
     }
 }
