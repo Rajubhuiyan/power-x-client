@@ -1,8 +1,9 @@
 .footer-container {
     background-color: #171426;
     height: 100%;
-}
+    margin-top: 10px !important;
 
+}
 .footer-container p{
     cursor: pointer;
 }

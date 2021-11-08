@@ -7,7 +7,7 @@ import whatsAppIcon from '../../../images/whatsapp-icon.png'
 
 const Footer = () => {
     return (
-        <section className="footer-container">
+        <section id="footer" className="footer-container mt-5">
             <div className="container">
                 <div className="row pt-5 pb-3">
                     <div className="col-sm-4 col-md-4">
