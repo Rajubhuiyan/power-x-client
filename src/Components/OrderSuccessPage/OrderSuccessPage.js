@@ -5,7 +5,7 @@ import tom from '../../images/tom.gif';
 const OrderSuccessPage = () => {
     const [loggedInUser, setLoggedInUser, orderAndPayment, setOrderAndPayment] = useContext(userContext);
     useEffect(() => {
-        fetch('http://localhost:5000/sendPayment', {
+        fetch('https://desolate-refuge-31530.herokuapp.com/sendPayment', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(orderAndPayment)
