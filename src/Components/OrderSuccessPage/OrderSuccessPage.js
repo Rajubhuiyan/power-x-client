@@ -14,7 +14,6 @@ const OrderSuccessPage = () => {
     return (
         <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
             <div>
-                <h1 className="text-center">Order Done</h1>
                 <img style={{ height: '60vh' }} src={tom} alt="" />
             </div>
         </div>
