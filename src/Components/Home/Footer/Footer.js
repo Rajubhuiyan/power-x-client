@@ -4,6 +4,7 @@ import faceBookIcon from '../../../images/facebook-icon.png'
 import instaGramIcon from '../../../images/instagram-icon.png';
 import tweeterIcon from '../../../images/twitter-icon.png';
 import whatsAppIcon from '../../../images/whatsapp-icon.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -11,7 +12,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row pt-5 pb-3">
                     <div className="col-sm-4 col-md-4">
-                        <a style={{ fontWeight: '700', fontSize: '30px' }} className="navbar-brand text-white" href=".">POWER <span style={{ color: 'yellow', fontWeight: '700', fontSize: '30px' }}>X</span></a>
+                        <Link to="/"style={{ fontWeight: '700', fontSize: '30px' }} className="navbar-brand text-white" >POWER <span style={{ color: 'yellow', fontWeight: '700', fontSize: '30px' }}>X</span></Link>
                     </div>
                     <div className="col-md-2">
                         <p style={{ fontWeight: 'bold' }} className="text-white">Need Help?</p>

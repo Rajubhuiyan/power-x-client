@@ -6,6 +6,7 @@ const Navvar = () => {
 
     const handleSignOut = () => {
         sessionStorage.removeItem('googleToken');
+        window.location.reload();
     }
     return (
         <div className='container'>
@@ -37,7 +38,7 @@ const Navvar = () => {
                             </li>
                             <li className="nav-item me-4">
                                 {
-                                    sessionStorage.getItem('googleToken') ? <a onClick={handleSignOut} className="nav-link text-white" href="/">Sign Out</a> : <Link style={{ textDecoration: 'none' }} to="/login"> <a className="nav-link text-white" href>Log In</a> </Link>
+                                    sessionStorage.getItem('googleToken') ? <Link onClick={handleSignOut} className="nav-link text-white" to="/">Sign Out</Link> : <Link className="nav-link text-white" style={{ textDecoration: 'none' }} to="/login">Log In </Link>
                                 }
                             </li>
                         </ul>
